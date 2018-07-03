@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QQ表情——Doge</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .doge {
+            margin-left: 50%;
+            transform: translate(-50%);
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .head {
+            width: 7.5em;
+            height: 7.5em;
+            background-color: #fed847;
+            border: 0.22em solid #df7f00;
+            border-radius: 50%;
+        }
+
+        .eye {
+            position: relative;
+            background-color: #fff;
+        }
+
+        .eyeLeft {
+            position: absolute;
+            top: 28px;
+            left: 13px;
+            width: 28px;
+            height: 22px;
+            border: 0.125em solid #c0773a;
+            border-radius: 50% / 48%;
+            background-color: #fff;
+        }
+
+        .eyeLeftIn {
+            position: absolute;
+            left: 13.99px;
+            top: 2.2px;
+            width: 10px;
+            height: 15px;
+            background-color: #602e06;
+            border-radius: 5px / 7.5px;
+            /* border-top-left-radius: 5px 8px;
+            border-top-right-radius: 5px 8px;
+            border-bottom-right-radius: 5px 8px;
+            border-bottom-left-radius: 5px 8px; */
+            transform: rotateZ(16deg);
+        }
+
+        .eyeRight {
+            position: absolute;
+            top: 28px;
+            right: 34px;
+            width: 28px;
+            height: 22px;
+            border: 0.125em solid #c0773a;
+            border-radius: 50% / 48%;
+            background-color: #fff;
+        }
+
+        .eyeRightIn {
+            position: absolute;
+            left: 12.1px;
+            top: 2.05px;
+            width: 12px;
+            height: 15px;
+            background-color: #602e06;
+            border-radius: 6px / 7.5px;
+            /* border-top-left-radius: 5px 8px; border-top-right-radius: 5px 8px; border-bottom-right-radius: 5px 8px; border-bottom-left-radius:
+5px 8px; */
+            transform: rotateZ(16deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    1.head
+    2.eyeLeft
+    3.eyeRight
+    4.mouseLeft
+    5.mouseRight
+    6.blushLeft
+    7.blushRight
+ -->
+
+    <div class="doge">
+        <div class="head">
+            <div class="eye">
+                <div class="eyeLeft">
+                    <div class="eyeLeftIn"></div>
+                </div>
+                <div class="eyeRight">
+                    <div class="eyeRightIn"></div>
+                </div>
+            </div>
+            <div class="mouse">
+                <div class="mouseLeft"></div>
+                <div class="mouseRight"></div>
+            </div>
+            <div class="blush">
+                <div class="blushLeft"></div>
+                <div class="blushRight"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

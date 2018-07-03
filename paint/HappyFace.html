@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Face</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wholeFace {
+            margin-top: 50px;
+            margin-left: 50px;
+            position: relative;
+
+            width: 70px;
+            height: 70px;
+            background-color: #fbd341;
+            border-radius: 50%;
+        }
+
+        .eyeLeft {
+            position: absolute;
+            top: -3px;
+            right: 35px;
+
+            width: 6px;
+            height: 9px;
+            background-color: #0052a2;
+        }
+
+        .eyeRight {
+            position: absolute;
+            top: -3px;
+            right: 17px;
+
+            width: 6px;
+            height: 9px;
+            background-color: #0052a2;
+        }
+
+        .mouse {
+            position: absolute;
+            right: 17px;
+            top: 10px;
+
+            width: 20px;
+            height: 20px;
+            /* background-color: red; */
+            border-radius: 66%;
+            border-bottom: 4px #0052a2 solid;
+        }
+
+        .mouseU {
+            position: absolute;
+            top: 15px;
+            right: 17px;
+
+            width: 23px;
+            height: 18px;
+            background-color: #0052a2;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        .mouseU::before {
+            position: absolute;
+            top: 0px;
+            right: 5px;
+            content: "";
+
+            width: 13px;
+            height: 13px;
+            background-color: #fbd341;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wholeFace">
+        <div class="eyeLeft"></div>
+        <div class="eyeRight"></div>
+        <div class="mouse"></div>
+    </div>
+
+    <div class="wholeFace">
+        <div class="eyeLeft"></div>
+        <div class="eyeRight"></div>
+        <div class="mouseU"></div>
+    </div>
+</body>
+
+</html>

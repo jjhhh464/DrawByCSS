@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin: 10px auto;
+    color: lightcoral;
+    /* font-weight: bold; */
+}
+.robot {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* background-color: lightgreen; */
+}
+/* 在框架内居中 */
+.head,
+.eye,
+.bod,
+.footer {
+    margin: 0 auto;
+}
+/* 机器人颜色 */
+.head,
+.content .bod,
+.content .bod .hand_l,
+.content .bod .hand_r,
+.footer .foot_l,
+.footer .foot_r {
+    background-color: #5F93E8;
+}
+/* Head */
+
+/* 整个头部框架 */
+.head {
+    border-radius: 146px 146px 0 0;
+    width: 146px;
+    height: 100px;
+    transition: all linear 1s;
+}
+
+/* 眼睛 */
+.eye {
+    width: 14px;
+    height: 14px;
+}
+.eye_r {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    float: right;
+    border-radius: 10px;
+    margin-top: -30px;
+    margin-right: -40px;
+    transition: all linear 1s;
+}
+.eye_l {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    float: left;
+    border-radius: 50%;
+    margin-top: -30px;
+    margin-left: -40px;
+    transition: all linear 1s;
+}
+
+/* 废弃的方案 */
+/* .eye1 {
+    position: relative;
+    background-color: yellow;
+    left: 30px;
+    bottom: -90px;
+}
+.eye2 {
+    position: relative;
+    background-color: red;
+    left: 100px;
+    bottom: -70px;
+} */
+
+
+/* 身体部分 */
+.content .bod {
+    margin-top: -5px;
+    width: 146px;
+    height: 150px;
+    border-radius: 0 0 40px 40px;
+}
+.content .bod .hand_l {
+    width: 25px;
+    height: 90px;
+    float: left;
+    border-radius: 25px;
+    margin-left: -33px;
+    transition: all linear 0.3s;
+}
+.content .bod .hand_r {
+    width: 25px;
+    height: 90px;
+    float: right;
+    border-radius: 25px;
+    margin-right: -33px;
+    transition: all linear 0.3s;
+}
+
+
+/* 脚 */
+.footer .foot_l {
+    width: 25px;
+    height: 70px;
+    float: left;
+    margin-left: 105px;
+    margin-top: -10px;
+    border-radius: 0 0 25px 25px;
+}
+.footer .foot_r {
+    width: 25px;
+    height: 70px;
+    float: right;
+    margin-right: 105px;
+    margin-top: -10px;
+    border-radius: 0 0 25px 25px;
+}
+
+
+/* 动画 */
+/* 头部 */
+.header:hover .head {
+    width: 200px;
+    /* transform: rotateY(-30deg); */
+}
+
+/* 眼睛 */
+.header:hover .eye .eye_r,
+.header:hover .eye .eye_l {
+    transform: translateX(34px);
+    /* background-color: black; */
+    animation: blink linear 1s;
+}
+    @keyframes blink {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: rgba(109, 109, 109, 0.479);
+        }
+    }
+
+/* 手 */
+.content .bod:hover .hand_l {
+    transform: rotate(20deg);
+}
+.content .bod .hand_r {
+    transform: rotate(20deg);
+}
+/* 脚 */
+.footer .foot_l:hover {
+    transform: rotate(20deg);
+    transform-origin: top;
+}
+.footer .foot_r:hover {
+    transform: rotate(-20deg);
+    transform-origin: top;
+}
